@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.turisticapp.R
 
 import androidx.navigation.fragment.navArgs
@@ -42,6 +43,10 @@ class DetailFragment : Fragment() {
             SitesDetailDescription.text = sites.description
             SitesDetailComplit.text = sites.detail
             com.squareup.picasso.Picasso.get().load(sites.linkimage).into(SitesDetailImage)
+
+            mapButton.setOnClickListener{
+                findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToMapsFragment())
+            }
         }
 
     }

@@ -16,9 +16,6 @@
         <action
             android:id="@+id/action_listFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
-        <action
-            android:id="@+id/action_listFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -28,6 +25,9 @@
         <argument
             android:name="sites"
             app:argType="com.example.turisticapp.models.SitesItem" />
+        <action
+            android:id="@+id/action_detailFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
