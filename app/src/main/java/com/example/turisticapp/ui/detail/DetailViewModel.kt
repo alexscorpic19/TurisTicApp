@@ -1,4 +1,4 @@
-package com.example.turisticapp.detail
+package com.example.turisticapp.ui.detail
 
 import androidx.lifecycle.ViewModel
 

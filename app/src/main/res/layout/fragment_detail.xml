@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        tools:context=".detail.DetailFragment">
+        tools:context=".ui.detail.DetailFragment">
 
         <ImageView
             android:id="@+id/Sites_detail_image"

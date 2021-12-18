@@ -1,4 +1,4 @@
-package com.example.turisticapp.list
+package com.example.turisticapp.ui.list
 
 import android.util.Log
 import android.view.LayoutInflater

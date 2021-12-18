@@ -1,4 +1,4 @@
-package com.example.turisticapp.list
+package com.example.turisticapp.ui.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,15 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.example.turisticapp.R
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.turisticapp.databinding.FragmentListBinding
-import com.example.turisticapp.main.MainActivity
-import com.example.turisticapp.models.Sites
+import com.example.turisticapp.ui.main.MainActivity
 import com.example.turisticapp.models.SitesItem
-
-import com.google.gson.Gson
 
 class ListFragment : Fragment() {
 
@@ -37,7 +33,7 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
 
-        listViewModel.loadMockSitesFromJson(context?.assets?.open("Sites_list.json"))
+        listViewModel.getSitesFromServer()
         listViewModel.onSitesLoaded.observe(viewLifecycleOwner, { result ->
             onSitesLoadedSubscribe(result)
         })
