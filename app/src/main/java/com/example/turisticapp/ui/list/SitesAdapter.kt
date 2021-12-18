@@ -1,4 +1,4 @@
-package com.example.turisticapp.list
+package com.example.turisticapp.ui.list
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -29,6 +29,12 @@ class SitesAdapter(
     }
 
     override fun getItemCount(): Int = sitesList.size
+
+    fun appendItems(newItems: ArrayList<SitesItem>) {
+        sitesList.clear()
+        sitesList.addAll(newItems)
+        notifyDataSetChanged()
+    }
 
     class SitesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 

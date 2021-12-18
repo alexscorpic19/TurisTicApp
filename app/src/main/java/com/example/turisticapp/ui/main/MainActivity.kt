@@ -1,4 +1,4 @@
-package com.example.turisticapp.main
+package com.example.turisticapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.turisticapp.R
-import com.example.turisticapp.preference.SettingsFragment
+import com.example.turisticapp.ui.preference.SettingsFragment
 
 
 class MainActivity : AppCompatActivity() {
