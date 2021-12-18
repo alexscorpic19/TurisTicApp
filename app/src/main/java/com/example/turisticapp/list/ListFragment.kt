@@ -18,6 +18,7 @@ import com.google.gson.Gson
 class ListFragment : Fragment() {
 
     private lateinit var listBinding: FragmentListBinding
+    private lateinit var listViewModel: ListViewModel
     private lateinit var sitesAdapter: SitesAdapter
     private lateinit var listSites: ArrayList<SitesItem>
 

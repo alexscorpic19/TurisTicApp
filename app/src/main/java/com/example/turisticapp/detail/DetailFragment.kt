@@ -10,6 +10,7 @@ import com.example.turisticapp.R
 
 import androidx.navigation.fragment.navArgs
 import com.example.turisticapp.databinding.FragmentDetailBinding
+import com.example.turisticapp.list.SitesAdapter
 import com.example.turisticapp.main.MainActivity
 
 import com.squareup.picasso.Picasso
@@ -17,6 +18,7 @@ import com.squareup.picasso.Picasso
 class DetailFragment : Fragment() {
 
     private lateinit var detailBinding: FragmentDetailBinding
+    private lateinit var detailViewModel: DetailViewModel
     private  val args: DetailFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
