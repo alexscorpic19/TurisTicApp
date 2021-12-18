@@ -42,5 +42,15 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun showIcon(){
+        val actionBar : ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    fun hideIcon(){
+        val actionBar : ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(false)
+    }
+
 
 }
