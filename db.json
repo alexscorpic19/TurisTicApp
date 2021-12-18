@@ -1,39 +1,38 @@
-
-[
-    {
-      "name":"Catedral de giron",
-      "description":"la catedral mas antigua en la zona",
-      "points":"Puntos: 3",
-      "linkimage":"https://upload.wikimedia.org/wikipedia/commons/1/14/Basilica_Menor_San_Juan_Bautista_de_Giron.jpg",
-      "detail":"Colonial basílica de este pueblo patrimonio de Colombia que resalta entre sus antiguas calles y la muchedumbre que viene a visitar el municipio. Es un lugar realmente hermoso, fresco con misa cada hora que vale la pena visitar en este emblemático municipio"
-    },
-    {
-      "name":"Parque san pio",
-      "description":"Este parque con la escultura de botero se...",
-      "points":"Puntos: 4",
-      "linkimage":"https://media-cdn.tripadvisor.com/media/photo-s/0b/c5/6f/c9/la-gordita.jpg",
-      "detail":"Tradicional parque urbano con una escultura de bronce de una mujer desnuda realizada por Fernando Botero.El parque está ubicado en una de las mejores zonas de la ciudad, ideal para compartir en familia, hacer deporte, caminar bajo la sombra de los árboles y la brisa de la noche, alrededor varios restaurantes, fácil transporte y es un lugar muy seguro."
-    },
-    {
-      "name":"Casa de Bolivar",
-      "description":"se encuentra ubicada en el centro de la ciudad...",
-      "points":"Puntos: 3",
-      "linkimage":"https://versionantigua.bucaramanga.gov.co/noticias/wp-content/uploads/2019/05/Casa-de-Bol%C3%ADvar-en-Bucaramanga.jpg",
-      "detail":"En 1928 fue creado oficialmente el Centro de Historia de Santander, como homenaje y reconocimiento a algunos historiadores Santandereanos que desde 1908 venían trabajando por recuperar la historia santandereana con el auspicio de la Academia Colombiana de Historia."
-    },
-    {
-      "name":"Cerro del Santisimo",
-      "description":"Ubicado en el municipo de floridablanca es un de los sitios mas ...",
-      "points":"Puntos: 5",
-      "linkimage":"https://www.santanderalextremo.com/wp-content/uploads/2020/12/cerro-min.jpg",
-      "detail":"El Ecoparque Cerro del Santísimo es un sitio turístico ubicado en la Vereda Helechales, sector rural de Floridablanca (Santander), conocido por poseer una escultura de Jesús de Nazaret de 35 m de alto incluido su pedestal de 6 ,1\u200B que incluye unaestructura tríptica con 2 ascensores panorámicos y una escalera para permitir el acceso al mirador principal, el cual se encuentra a una altura de 40 m de alto y desde el cual se tiene una panorámica de Floridablanca y parte de Bucaramanga. Es un sitio de peregrinaje en Semana Santa, sobre todo para realizar el Viacrucis en Viernes Santo. Cuenta con un sistema de teleférico de 1.380 m para acceder al parque en 5 minutos desde la Hacienda La Esperanza (antigua casona ubicada en los alrededores del casco urbano de Floridablanca, sede de la antigua Cervecería Clausen, la primera fábrica cervecera del país).Fue inaugurada el 20 de junio de 2015 por el entonces Gobernador de Santander"
-    },
-    {
-      "name":"Parque Nacional Chicamocha Panachi",
-      "description":"Ubicado junto al cañon de chicamocha...",
-      "points":"Puntos: 5",
-      "linkimage":"https://static.wixstatic.com/media/8bfd40_80a9db7090484c7590bc859423a36d45~mv2.jpg",
-      "detail":"El Parque Nacional Del Chicamocha (también conocido como PANACHI), es un parque temático de reciente creación, es uno de los pocos parques naturales de Colombia dedicados al ecoturismo, siendo por tanto uno de los sitios turísticos más importantes del país. Fue abierto al público el sábado 2 de diciembre de 2006"
-    }
-  ]
-
+{
+	"sites": [{
+			"name": "Catedral de giron",
+			"description": "la catedral mas antigua en la zona",
+			"points": "Puntos: 3",
+			"linkimage": "https://upload.wikimedia.org/wikipedia/commons/1/14/Basilica_Menor_San_Juan_Bautista_de_Giron.jpg",
+			"detail": "Colonial basílica de este pueblo patrimonio de Colombia que resalta entre sus antiguas calles y la muchedumbre que viene a visitar el municipio. Es un lugar realmente hermoso, fresco con misa cada hora que vale la pena visitar en este emblemático municipio"
+		},
+		{
+			"name": "Parque san pio",
+			"description": "Este parque con la escultura de botero se...",
+			"points": "Puntos: 4",
+			"linkimage": "https://media-cdn.tripadvisor.com/media/photo-s/0b/c5/6f/c9/la-gordita.jpg",
+			"detail": "Tradicional parque urbano con una escultura de bronce de una mujer desnuda realizada por Fernando Botero.El parque está ubicado en una de las mejores zonas de la ciudad, ideal para compartir en familia, hacer deporte, caminar bajo la sombra de los árboles y la brisa de la noche, alrededor varios restaurantes, fácil transporte y es un lugar muy seguro."
+		},
+		{
+			"name": "Casa de Bolivar",
+			"description": "se encuentra ubicada en el centro de la ciudad...",
+			"points": "Puntos: 3",
+			"linkimage": "https://versionantigua.bucaramanga.gov.co/noticias/wp-content/uploads/2019/05/Casa-de-Bol%C3%ADvar-en-Bucaramanga.jpg",
+			"detail": "En 1928 fue creado oficialmente el Centro de Historia de Santander, como homenaje y reconocimiento a algunos historiadores Santandereanos que desde 1908 venían trabajando por recuperar la historia santandereana con el auspicio de la Academia Colombiana de Historia."
+		},
+		{
+			"name": "Cerro del Santisimo",
+			"description": "Ubicado en el municipo de floridablanca es un de los sitios mas ...",
+			"points": "Puntos: 5",
+			"linkimage": "https://www.santanderalextremo.com/wp-content/uploads/2020/12/cerro-min.jpg",
+			"detail": "El Ecoparque Cerro del Santísimo es un sitio turístico ubicado en la Vereda Helechales, sector rural de Floridablanca (Santander), conocido por poseer una escultura de Jesús de Nazaret de 35 m de alto incluido su pedestal de 6 ,1\u200B que incluye unaestructura tríptica con 2 ascensores panorámicos y una escalera para permitir el acceso al mirador principal, el cual se encuentra a una altura de 40 m de alto y desde el cual se tiene una panorámica de Floridablanca y parte de Bucaramanga. Es un sitio de peregrinaje en Semana Santa, sobre todo para realizar el Viacrucis en Viernes Santo. Cuenta con un sistema de teleférico de 1.380 m para acceder al parque en 5 minutos desde la Hacienda La Esperanza (antigua casona ubicada en los alrededores del casco urbano de Floridablanca, sede de la antigua Cervecería Clausen, la primera fábrica cervecera del país).Fue inaugurada el 20 de junio de 2015 por el entonces Gobernador de Santander"
+		},
+		{
+			"name": "Parque Nacional Chicamocha Panachi",
+			"description": "Ubicado junto al cañon de chicamocha...",
+			"points": "Puntos: 5",
+			"linkimage": "https://static.wixstatic.com/media/8bfd40_80a9db7090484c7590bc859423a36d45~mv2.jpg",
+			"detail": "El Parque Nacional Del Chicamocha (también conocido como PANACHI), es un parque temático de reciente creación, es uno de los pocos parques naturales de Colombia dedicados al ecoturismo, siendo por tanto uno de los sitios turísticos más importantes del país. Fue abierto al público el sábado 2 de diciembre de 2006"
+		}
+	]
+}
