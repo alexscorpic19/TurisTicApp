@@ -30,6 +30,12 @@ class SitesAdapter(
 
     override fun getItemCount(): Int = sitesList.size
 
+    fun appendItems(newItems: ArrayList<SitesItem>) {
+        sitesList.clear()
+        sitesList.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
     class SitesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         private var nameTextView: TextView = itemView.findViewById(R.id.tvName)

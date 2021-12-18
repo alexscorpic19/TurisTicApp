@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProvider
 import com.example.turisticapp.R
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,13 +21,14 @@ class ListFragment : Fragment() {
     private lateinit var listBinding: FragmentListBinding
     private lateinit var listViewModel: ListViewModel
     private lateinit var sitesAdapter: SitesAdapter
-    private lateinit var listSites: ArrayList<SitesItem>
+    private var listSites: ArrayList<SitesItem> = arrayListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         listBinding = FragmentListBinding.inflate(inflater, container, false)
+        listViewModel = ViewModelProvider(this)[ListViewModel::class.java]
 
         return listBinding.root
     }
@@ -35,7 +37,11 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity?)?.hideIcon()
 
-        listSites = loadMockSitesFromJson()
+        listViewModel.loadMockSitesFromJson(context?.assets?.open("Sites_list.json"))
+        listViewModel.onSitesLoaded.observe(viewLifecycleOwner, { result ->
+            onSitesLoadedSubscribe(result)
+        })
+
         sitesAdapter = SitesAdapter(listSites, onItemClicked = { onSitesClicked(it) } )
 
         listBinding.list.apply {
@@ -46,14 +52,20 @@ class ListFragment : Fragment() {
 
     }
 
+    private fun onSitesLoadedSubscribe(result: ArrayList<SitesItem>?) {
+        result?.let { listSites ->
+            sitesAdapter.appendItems(listSites)
+            /*
+            // TODO: revisar feedback
+            this.listSuperheroes = listSuperheroes
+            superHeroesAdapter.notifyDataSetChanged()
+            */
+        }
+    }
+
     private fun onSitesClicked(sites: SitesItem) {
         findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(sites = sites))
     }
 
-    private fun loadMockSitesFromJson(): ArrayList<SitesItem> {
-        val sitesString: String = context?.assets?.open("Sites_list.json")?.bufferedReader().use { it!!.readText() } //TODO reparar !!
-        val gson = Gson()
-        val sitesList = gson.fromJson(sitesString, Sites::class.java)
-        return sitesList
-    }
+
 }
